@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 信息卡片介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #fafaf9;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+            color: #1c1c1c;
+            line-height: 1.65;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2.5rem 1.25rem 4rem;
+        }
+        .page-wrap {
+            max-width: 720px;
+            width: 100%;
+        }
+        /* 极简标题层级 */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin: 0 0 0.75rem 0;
+            padding: 0;
+            line-height: 1.2;
+            color: #1a1a1a;
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin: 2.5rem 0 1.2rem 0;
+            border-bottom: 1px solid #e6e5e3;
+            padding-bottom: 0.35rem;
+            color: #2a2a2a;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0 0 0.4rem 0;
+            color: #333;
+        }
+        p {
+            margin: 0 0 1.25rem 0;
+            color: #3b3b3b;
+        }
+        a {
+            color: #1f6b3a;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        a:hover {
+            border-bottom-color: #1f6b3a;
+        }
+        .hero {
+            margin: 1.5rem 0 2.5rem 0;
+        }
+        .hero p {
+            font-size: 1.08rem;
+            background: #f3f2f0;
+            padding: 1rem 1.4rem;
+            border-radius: 12px;
+            color: #2a2a2a;
+            border-left: 4px solid #b4c8b2;
+            margin: 0;
+        }
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 2rem 0 1.8rem 0;
+        }
+        .info-card {
+            background: white;
+            border-radius: 18px;
+            padding: 1.4rem 1.6rem 1.6rem 1.6rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03), 0 4px 12px rgba(0,0,0,0.02);
+            border: 1px solid #efeeec;
+            transition: box-shadow 0.2s;
+        }
+        .info-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+        }
+        .info-card p {
+            margin-bottom: 0.35rem;
+            font-size: 0.98rem;
+        }
+        .info-card .meta-tag {
+            display: inline-block;
+            background: #eceded;
+            font-size: 0.75rem;
+            padding: 0.1rem 0.75rem;
+            border-radius: 30px;
+            color: #4a5a4a;
+            letter-spacing: 0.01em;
+            margin-top: 0.5rem;
+        }
+        .audience-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0.2rem 0;
+        }
+        .audience-list li {
+            padding: 0.45rem 0 0.45rem 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+            border-bottom: 1px dashed #f0efec;
+        }
+        .audience-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.2rem;
+            color: #6d8f6a;
+            font-weight: bold;
+        }
+        .link-note {
+            background: #f6f7f5;
+            padding: 1.2rem 1.6rem;
+            border-radius: 20px;
+            margin: 2.4rem 0 1.8rem;
+            border: 1px solid #e3e2de;
+            font-size: 0.98rem;
+        }
+        .faq-summary {
+            margin: 2.2rem 0 0.8rem;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eceae6;
+            padding: 0.9rem 0;
+        }
+        .faq-item strong {
+            font-weight: 500;
+            color: #1f3b2a;
+        }
+        .faq-item p {
+            margin: 0.25rem 0 0 0;
+            font-size: 0.95rem;
+            color: #4f4f4f;
+        }
+        .footer-meta {
+            margin-top: 3.5rem;
+            font-size: 0.8rem;
+            color: #9a9a97;
+            border-top: 1px solid #e6e4e0;
+            padding-top: 1.5rem;
+            text-align: left;
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 1.2rem 0.9rem 3rem;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+            .info-card {
+                padding: 1.2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+                padding: 0.9rem 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <h1>爱游戏 · 重新遇见</h1>
+    <div class="hero">
+        <p>收藏一个站点，有时是为将来某次安静的浏览做准备。<br>
+        索引页面「<a href="https://index--aiyouxi.com">爱游戏</a>」正是这样一个信息锚点：它不追求即时涌来的流量，而是愿意被读者反复光顾、慢慢翻阅。</p>
+    </div>
+
+    <!-- 卡片：主视觉 -->
+    <div class="card-grid">
+        <div class="info-card">
+            <h3>📌 主视觉 · 索引即门户</h3>
+            <p>简洁的入口结构，把游戏文化、内容归档和社区脉络整合在同一个页面上。每次打开，所见即所得，没有弹窗或过度动效。页面布局优先照顾返回的老读者——记忆中的板块位置清晰可辨。</p>
+            <span class="meta-tag">再次访问 0 摩擦</span>
+        </div>
+
+        <div class="info-card">
+            <h3>🧩 用途卡片 · 不止于链接</h3>
+            <p>无论你是想回顾某个游戏专题，还是随手查阅同类作品索引，爱游戏页面都提供了一种低决策成本的入口。它像一张经过梳理的「兴趣地图」：从类型索引到制作背景，信息被组织在窄而深的页面流中。</p>
+            <span class="meta-tag">适合快速定位 & 浏览</span>
+        </div>
+    </div>
+
+    <!-- 适合人群 -->
+    <h2>适合哪些读者</h2>
+    <ul class="audience-list">
+        <li><strong>日常游戏文化阅读者</strong> — 对游戏史、设计思路、平台变迁有兴趣，需要一份长期可用的索引页</li>
+        <li><strong>内容收藏与整理型用户</strong> — 习惯把感兴趣的页面加入书签，并期待页面本身保持稳定、干净</li>
+        <li><strong>偶尔回访的玩家</strong> — 不需要注册或推送，直接通过链接回到感兴趣的主题区域</li>
+        <li><strong>轻度研究或写作参考</strong> — 借助索引结构快速找到分类话题，节省搜索时间</li>
+    </ul>
+
+    <!-- 自然链接段落 -->
+    <div class="link-note">
+        <p style="margin:0;">如果你在寻找一个可以持续回看的游戏文化索引，不妨将 <a href="https://index--aiyouxi.com">爱游戏</a> 保留在书签夹里。它不喧哗，但信息的脉络会在你一次次访问中逐渐清晰。</p>
+    </div>
+
+    <!-- FAQ 摘要 (两问) -->
+    <div class="faq-summary">
+        <h2>常见想法 · 简短回应</h2>
+        <div class="faq-item">
+            <strong>这个页面会频繁改动吗？</strong>
+            <p>结构保持稳定，内容随游戏文化动态做适度补充。核心导航和卡片分区不会无故消失，适合长期关注。</p>
+        </div>
+        <div class="faq-item">
+            <strong>为什么选择再次访问而不是一次读完？</strong>
+            <p>索引型页面的价值恰恰在于「可返回」。你不需要一次消化全部信息，每次回来都可能发现之前忽略的角落，或者通过熟悉的入口找到更新的内容。</p>
+        </div>
+        <div class="faq-item">
+            <strong>收藏后多久回来看一次比较合适？</strong>
+            <p>这完全取决于你的兴趣节奏。有人每周打开一次，有人只在需要某个分类时回来。爱游戏索引的设计初衷是：无论间隔多久，你都能快速重新进入状态。</p>
+        </div>
+    </div>
+
+    <!-- 结语 -->
+    <p style="font-size:0.95rem; color:#5a5a5a; margin-top: 2rem;">索引是一种克制的邀请。当你再次打开 <a href="https://index--aiyouxi.com">爱游戏</a>，那些被精心摆放的信息卡片会像老朋友一样等着你，安静，但一直在线。</p>
+
+    <div class="footer-meta">
+        <span>内容方向 · 信息卡片 · 长期阅读</span>
+    </div>
+
+</div>
+</body>
+</html>
