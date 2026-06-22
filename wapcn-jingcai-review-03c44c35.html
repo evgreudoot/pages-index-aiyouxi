@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竞彩网 · 信息索引 | 资料整理</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafaf9;
+      color: #1c1917;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* 极简标题层级 */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+      color: #1c1917;
+      border-left: 4px solid #2563eb;
+      padding-left: 1rem;
+    }
+
+    .subhead {
+      font-size: 1rem;
+      color: #57534e;
+      margin-bottom: 2.5rem;
+      padding-left: 1.4rem;
+      font-weight: 380;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 520;
+      margin-top: 2.8rem;
+      margin-bottom: 1rem;
+      color: #292524;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 520;
+      margin-top: 1.8rem;
+      margin-bottom: 0.4rem;
+      color: #44403c;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: #3f3f46;
+      font-size: 0.95rem;
+    }
+
+    /* 卡片——偏向资料卡风格 */
+    .insight-card {
+      background: #ffffff;
+      border: 1px solid #e7e5e4;
+      border-radius: 18px;
+      padding: 1.5rem 1.6rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    .insight-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.8rem 0 1rem;
+    }
+
+    .feature-item {
+      flex: 1 1 180px;
+      background: #ffffff;
+      border: 1px solid #e7e5e4;
+      border-radius: 16px;
+      padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    }
+
+    .feature-item strong {
+      display: block;
+      font-weight: 520;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      color: #1c1917;
+    }
+
+    .feature-item span {
+      font-size: 0.88rem;
+      color: #57534e;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-size: 0.75rem;
+      font-weight: 480;
+      padding: 0.2rem 0.7rem;
+      border-radius: 40px;
+      margin-right: 0.3rem;
+      letter-spacing: 0.02em;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e7e5e4;
+      margin: 2.5rem 0 1.2rem;
+    }
+
+    .footnote {
+      font-size: 0.82rem;
+      color: #78716c;
+      border-top: 1px solid #e7e5e4;
+      padding-top: 1.6rem;
+      margin-top: 2.4rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(37, 99, 235, 0.25);
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #2563eb;
+    }
+
+    .avoid-link-decoration {
+      border-bottom: none;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 480px) {
+      body {
+        padding: 1.25rem 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+        padding-left: 0.8rem;
+      }
+      .subhead {
+        padding-left: 1rem;
+      }
+      .feature-grid {
+        flex-direction: column;
+      }
+      .insight-card {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <h1>竞彩网 · 信息索引</h1>
+    <div class="subhead">资料整理 · 结构梳理 · 来源参考</div>
+
+    <p>
+      围绕赛事数据、竞彩动态与资讯整合，<a href="https://wapcn-jingcai.com">竞彩网</a> 作为一类信息聚合入口，面向有查阅需求的用户提供竞赛相关资料的索引服务。以下从内容摘要、功能亮点、使用建议以及访问说明四个层面展开整理，便于快速了解其定位与边界。
+    </p>
+
+    <!-- 摘要卡片 -->
+    <div class="insight-card">
+      <h3 style="margin-top:0;">摘要</h3>
+      <p>
+        竞彩网主要汇集了足球、篮球等主流赛事的赛程、比分、统计数据以及相关资讯。其页面结构偏向目录式陈列，帮助浏览者按赛事分类检索所需信息。不提供投注通道，不涉及即时赔率或交易引导，整体上更接近自助式资料库。可作为赛前背景查阅的辅助渠道之一。
+      </p>
+      <p>
+        平台信息更新依赖第三方公开数据，建议结合多个信源交叉验证。使用前可留意页面标注的时间戳与数据来源说明。
+      </p>
+    </div>
+
+    <h2>亮点与结构特征</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <strong>按赛事归类</strong>
+        <span>联赛、杯赛分列索引，减少无关信息干扰，快速定位目标赛事。</span>
+      </div>
+      <div class="feature-item">
+        <strong>比分面板</strong>
+        <span>近期完场与实时比分集中展示，便于横向比较对阵与赛果。</span>
+      </div>
+      <div class="feature-item">
+        <strong>轻量目录</strong>
+        <span>页面层级较浅，无复杂嵌套，适合快速浏览与资料摘录。</span>
+      </div>
+      <div class="feature-item">
+        <strong>数据字段简洁</strong>
+        <span>只保留必要字段如时间、主客队、比分，减少冗余视觉元素。</span>
+      </div>
+    </div>
+
+    <h2>适用场景参考</h2>
+    <p>
+      若你需要整理某轮联赛的对阵列表，或核查已结束赛事的大致比分，<a href="https://wapcn-jingcai.com">竞彩网</a> 能够提供相对规整的原始列表。对于深度数据分析、历史战绩回溯或赔率变化追踪，建议配合专业统计站点使用。以下列举几种常见用法：
+    </p>
+    <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+      <li style="margin-bottom: 0.6rem; padding-left: 1.2rem; position: relative;">
+        <span style="position: absolute; left: 0; color: #2563eb;">·</span>
+        赛前预习：浏览近期赛程，了解比赛日分布与对阵双方。
+      </li>
+      <li style="margin-bottom: 0.6rem; padding-left: 1.2rem; position: relative;">
+        <span style="position: absolute; left: 0; color: #2563eb;">·</span>
+        赛后核对：对照比分面板快速确认赛果，辅助记录。
+      </li>
+      <li style="margin-bottom: 0.6rem; padding-left: 1.2rem; position: relative;">
+        <span style="position: absolute; left: 0; color: #2563eb;">·</span>
+        分类索引：按足球、篮球等大类缩小搜索范围，提高信息筛选效率。
+      </li>
+    </ul>
+
+    <h2>使用建议</h2>
+    <p>
+      竞彩网适合作为信息检索的起点，而非唯一依据。由于不同平台的数据刷新频率与收录范围存在差异，建议交叉参考联赛官方渠道或经核实的统计机构。对于时效性要求较高的内容（如临场变更、延迟开赛），可同时留意赛事官方社媒或文字直播。
+    </p>
+    <p>
+      另外，页面中的“竞彩”一词取自赛事竞猜类型命名，与具体交易行为无关。浏览时注意区分资讯属性与商业属性。
+    </p>
+
+    <!-- FAQ 摘要风格 -->
+    <h2>常见说明摘要</h2>
+    <div style="margin: 0 0 1.2rem 0;">
+      <p><strong>Q：信息覆盖面如何？</strong><br>
+      主要覆盖主流足球联赛、杯赛及部分篮球赛事。次级联赛与小众赛事收录有限，可根据实际需求评估是否满足。</p>
+      <p><strong>Q：是否需要注册或登录？</strong><br>
+      浏览赛程、比分等公开内容无需账户，部分交互功能可能有限制。未发现强制注册门槛。</p>
+      <p><strong>Q：数据更新频率？</strong><br>
+      常规赛事数据通常在完赛后数分钟内更新，但非实时秒级推送。建议以官方计时为准。</p>
+    </div>
+
+    <hr>
+
+    <p style="font-size: 0.88rem; background: #f1f5f9; padding: 0.8rem 1rem; border-radius: 12px;">
+      ⚡ 访问提示：该网站仅提供信息索引与赛事资料整理，不涉及任何形式的投注引导或交易服务。请用户根据自身判断合理使用，保持对信息的审慎态度。
+    </p>
+
+    <div class="footnote">
+      本页为独立介绍页 · 资料来源：<a href="https://wapcn-jingcai.com">竞彩网</a> · 内容仅供参考，不构成任何建议。
+    </div>
+
+  </div>
+</body>
+</html>
